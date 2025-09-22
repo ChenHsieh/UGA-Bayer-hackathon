@@ -20,7 +20,7 @@ The notebook implements a feed-forward neural network using PyTorch. It includes
 
 ## Key Steps in the Notebook
 
-1.  **Load and Preprocess Data**: Loads the `C1.{selected_line|ALL}_PHENOnENV_PCA.csv` dataset, handles missing values via mean imputation, and separates features from the target variable (`YLD_BE`).
+1.  **Load and Preprocess Data**: Loads the `C1.{selected_line|ALL}_PHENOnENV_PCA.csv` dataset, handles missing values via mean imputation, and separates features from the target variable (`YLD_BE`). A truncated dataset was attached in the github as an example.
 2.  **Data Splitting**: Splits the data into training (80%), validation (10%), and test (10%) sets.
 3.  **Feature Scaling**: Applies `StandardScaler` to normalize the feature values, fitting only on the training data to prevent data leakage.
 4.  **Model Definition**: Defines a `MaizeYieldPredictor` class, which is a sequential neural network with three hidden layers. It includes `BatchNorm1d` and `Dropout` for regularization.
